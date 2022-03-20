@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+    <h1>Calculate Sales Tax</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../SalesTax/index.html">Sales Tax</a></li>
+        <li><a href="../Change/index.html">Change Calculator</a></li>
+    </ul>
+</nav>
+<br>
+<body>
+    <main>
+        <fieldset>
+            <legend>Enter Subtotal and Tax Rate</legend>
+            <form id="formSalesTax" name="formSalesTax" action="" method="">
+                <div>
+                    <label for="subtotal">Subtotal:</label>
+                    <input id="subtotal" type="text" name="subtotal">
+                </div>
+                <div>
+                    <label for="taxRate">Tax Rate:</label>
+                    <input id="taxRate" type="text" name="taxRate">
+                </div>
+                <div>
+                    <label for="salesTax">Sales Tax:</label>
+                    <input id="salesTax" type="text" name="salesTax" disabled>
+                </div>
+                <div>
+                    <label for="total">Total:</label>
+                    <input id="total" type="text" name="total" disabled>
+                </div>
+                <div>
+                    <input type="button" value="Calculate" title="buttonSubmit" id="buttonSubmit">
+                    <br>
+                    <br>
+                    <input type="button" value="Clear" title="buttonClear" id="buttonClear">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <script src="SalesTax.js"></script>
+</body>
+</html>
